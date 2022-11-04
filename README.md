@@ -1,2 +1,4 @@
 # beans
-kuehlschrank inventarisieren// Abgleich mit Kassenbon // Desktop und Android App
+Work in progress branch
+
+verschiedenen Versionen einfach in den master mergen.
