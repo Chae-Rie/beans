@@ -62,17 +62,19 @@ class GUI():
 
         self.items_size_entry = ttk.Entry(self.main_window).grid(column=3, row=2, pady=10)
 
-        def fetch_data():
-            pass
+
         # Holt alle Daten und schickt diese Weiter an die Datenklasse damit diese dort verarbeitet werden können
 
 
         # Buttons
 
-        self.btn_add = Button(self.main_window, text="Hinzufügen", command=fetch_data).grid(column=0, row=4, pady=10)
+        self.btn_add = Button(self.main_window, text="Hinzufügen").grid(column=0, row=4, pady=10)
+
 
         self.root.mainloop()  # Ohne das mainloop startet die Erstellung des Fensters nicht
 
+    def fetch_data(self):
+        pass
 window = GUI()
 
 
