@@ -84,7 +84,7 @@ class GUI:
         self.root.mainloop()  # Ohne das mainloop startet die Erstellung des Fensters nicht
 
     def fetch_data(self):
-        # add all data into an dictionary i think
+        # add all data into a dictionary I think
         print(self.item_amount.get(),
               self.item_cat.get(),
               self.item_name.get(),
