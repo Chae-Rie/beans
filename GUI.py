@@ -91,7 +91,8 @@ class GUI:
               self.item_purchase_date.get(),
               self.item_size.get())
 
-
+# test = "Hello: {0},{1}".format("You", "and me.")
+# print(test) So kann ich die Argumente effektiv übergeben
 window = GUI()
 
 # Für Testzwecke lassen wir mainloop und die Objekterstellung in dieser Datei
