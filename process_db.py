@@ -23,8 +23,7 @@ df.rename({0: "A", 1: "B", 2: "C"}, axis=1, inplace=True)
 print(df)
 
 
-def get_current_stock(name):
-    table_name = name
+def get_current_stock(table_name):
     df.to_sql(
         table_name,
         engine,
@@ -38,38 +37,39 @@ def get_current_stock(name):
         }
     )
 
-def create_table_kuehlschrank(name):
+def create_table_kuehlschrank(table_name):
     """
     Erstellen der Tabelle zum Kühlschrank -> Ich weiß noch nicht wie ich die id verwalten möchte
     :param name: Name der Tabelle.
     :return:
     """
-    table_name = name
-    data = {"id": [1], "standort": ["küche1"]}
+    data = {"id": [1],
+            "standort": ["küche1"]}
     df = pd.DataFrame(data)
     print(df)
 
-def create_table_rezept(name):
-    table_name = name
-    data = {"id": [1], "beschreibung": ["Hier könnte der Text einer zufälligen Zutat stehen."],
+def create_table_rezept(table_name):
+    data = {"id": [1],
+            "beschreibung": ["Hier könnte der Text einer zufälligen Zutat stehen."],
             "zutaten": ["Hier möchte ich ein Dictionary einfuegen, was das Rezept enthält TODO"]}
     df = pd.DataFrame(data)
     print(df)
 
-def create_table_item_kat(name):
-    table_name = name
-    data = {"id": [1], "artikelbeschreibung": ["Hier könnte eine Beschreibung zu einer Art von Artikel stehen"]}
+def create_table_item_kat(table_name):
+    data = {"id": [1],
+            "artikelbeschreibung": ["Hier könnte eine Beschreibung zu einer Art von Artikel stehen"]}
     df = pd.DataFrame(data)
     print(df)
 
-def create_table_receipt(name):
-    data = {"id": [1], "items_gesamt": ["Zahl der gekauften Items"], "Summe in EUR": [2.50]}
+def create_table_receipt(table_name):
+    data = {"id": [1],
+            "items_gesamt": ["Zahl der gekauften Items"],
+            "Summe in EUR": [2.50]}
     df = pd.DataFrame(data)
     print(df)
     pass
 
-def create_table_items(name):
-    table_name = name
+def create_table_items(table_name):
     data = {"id": [1],
             "menge": [1.50],  # decimal, weil es auch (kilo)-gramm sein können
             "groessenangabe": ["STK oder KG"],
