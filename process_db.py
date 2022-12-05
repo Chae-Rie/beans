@@ -37,16 +37,18 @@ def get_current_stock(table_name):
         }
     )
 
+
 def create_table_kuehlschrank(table_name):
     """
     Erstellen der Tabelle zum Kühlschrank -> Ich weiß noch nicht wie ich die id verwalten möchte
-    :param name: Name der Tabelle.
+    :param table_name: Name der Tabelle.
     :return:
     """
     data = {"id": [1],
             "standort": ["küche1"]}
     df = pd.DataFrame(data)
     print(df)
+
 
 def create_table_rezept(table_name):
     data = {"id": [1],
@@ -55,11 +57,13 @@ def create_table_rezept(table_name):
     df = pd.DataFrame(data)
     print(df)
 
+
 def create_table_item_kat(table_name):
     data = {"id": [1],
             "artikelbeschreibung": ["Hier könnte eine Beschreibung zu einer Art von Artikel stehen"]}
     df = pd.DataFrame(data)
     print(df)
+
 
 def create_table_receipt(table_name):
     data = {"id": [1],
@@ -68,6 +72,7 @@ def create_table_receipt(table_name):
     df = pd.DataFrame(data)
     print(df)
     pass
+
 
 def create_table_items(table_name):
     data = {"id": [1],
@@ -79,3 +84,7 @@ def create_table_items(table_name):
             }
     df = pd.DataFrame(data)
     print(df)
+
+
+def read_out_data():
+    pass

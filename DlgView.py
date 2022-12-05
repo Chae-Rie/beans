@@ -1,11 +1,15 @@
 from tkinter import ttk
 import tkinter as tk
 
+import pandas as pd
+
+
 class Window_Start:
-    '''Visuals der Desktop-Anwendung'''
+    """Visuals der Desktop-Anwendung"""
     def __init__(self, master):
         # Hier können anhand der Übergabeparameter auch Werte nachgetragen werden
         # die ggf. vom Fenster bestimmt sind; Da Du nur 1x Fenster brauchst Latte
+
         self.master = master
         self.master.title("Organize your beans!")
         self.master.geometry("700x500")
@@ -80,23 +84,33 @@ class Window_Start:
 
     def fetch_data(self):
         # add all data into a dictionary I think
-        print(self.item_amount.get(),
-              self.item_cat.get(),
-              self.item_name.get(),
-              self.item_purchase_date.get(),
-              self.item_size.get())
+        data = {
+            "Menge:": [self.item_amount.get()],
+            "ItemCat:": [self.item_cat.get()],
+            "ItemName:": [self.item_name.get()],
+            "Gekauft am:": [self.item_purchase_date.get()],
+            "Item Größe:": [self.item_size.get()]
+        }
+        df_data = pd.DataFrame(data)
+        print(df_data)
 
 # test = "Hello: {0},{1}".format("You", "and me.")
 # print(test) So kann ich die Argumente effektiv übergeben
 
-# Für Testzwecke lassen wir mainloop und die Objekterstellung in dieser Datei
+
+class result_screen:
+    """Anstatt die Ergebnisse in demselben Fenster auszugeben, möchte ich hier ein neues tkinter-Fenster öffnen
+    in diesem soll dann die Tabelle, die direkt mit der DB verbunden ist, dargestellt werden."""
+    def __init__(self, master):
+        self.master = master
 
 
-def main():
-    root = tk.Tk()
-    app = Window_Start(root)
-    root.mainloop()
-
-
-if __name__ == '__main__':
-    main()
+# def main():
+#     """In dieser Methode können wir alles an Logik hinzufügen und anschließend wird es in Main getriggered."""
+#     root = tk.Tk()
+#     app = Window_Start(root)
+#     root.mainloop()
+#
+#
+# if __name__ == '__main__':
+#     main()
