@@ -86,5 +86,10 @@ def create_table_items(table_name):
     print(df)
 
 
+from sqlalchemy.orm import sessionmaker
+
+
 def read_out_data():
-    pass
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    result = session.query().all()
