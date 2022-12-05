@@ -88,8 +88,11 @@ def create_table_items(table_name):
 
 from sqlalchemy.orm import sessionmaker
 
-
 def read_out_data():
     Session = sessionmaker(bind=engine)
     session = Session()
     result = session.query().all()
+
+
+# Welchen Sinn haben genau diese ganzen create_table funktionen?!
+# Ich will doch eig eine große Tabelle wo all diese Dinge drin sind ;-; Das war übelst dumm
