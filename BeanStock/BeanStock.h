@@ -12,7 +12,7 @@
 
 
 // CBeanStockApp:
-// See BeanStock.cpp for the implementation of this class
+// See BeanStock.cpp for the implementation of this class                                                                                  
 //
 
 class CBeanStockApp : public CWinApp
