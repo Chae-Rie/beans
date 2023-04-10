@@ -33,4 +33,6 @@
 
 # Folders
 /build*
-/.vs*
+.vs/
+res/
+x64/
