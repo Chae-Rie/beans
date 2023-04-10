@@ -86,3 +86,10 @@ HCURSOR CBeanStockDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+CString CBeanStockDlg::GetEditInput(UINT uiRessourceId)
+{
+	CString stBuffer;
+	GetDlgItemTextW(uiRessourceId, stBuffer);
+	return CString();
+}
+
