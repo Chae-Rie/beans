@@ -31,6 +31,7 @@ void CBeanStockDlg::DoDataExchange(CDataExchange* pDX)
 BEGIN_MESSAGE_MAP(CBeanStockDlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_NOTIFY(DTN_DATETIMECHANGE, IDC_DATETIMEPICKER_PURCHASE, &CBeanStockDlg::OnDTNChangeDtPickerPurchase)
 END_MESSAGE_MAP()
 
 
@@ -93,3 +94,10 @@ CString CBeanStockDlg::GetEditInput(UINT uiRessourceId)
 	return CString();
 }
 
+
+
+void CBeanStockDlg::OnDTNChangeDtPickerPurchase(NMHDR* pNMHDR, LRESULT* pResult) {
+	LPNMDATETIMECHANGE pDTChange = reinterpret_cast<LPNMDATETIMECHANGE>( pNMHDR );
+	// TODO: Add your control notification handler code here
+	*pResult = 0;
+}

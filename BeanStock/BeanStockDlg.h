@@ -32,4 +32,6 @@ protected:
 	DECLARE_MESSAGE_MAP()
 private:
 	CString GetEditInput(UINT uiRessourceId);
+public:
+	afx_msg void OnDTNChangeDtPickerPurchase(NMHDR* pNMHDR, LRESULT* pResult);
 };
