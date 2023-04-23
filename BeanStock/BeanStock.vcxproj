@@ -101,20 +101,30 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="0_BeanStock_doc.h" />
     <ClInclude Include="BeanStock.h" />
     <ClInclude Include="BeanStockDlg.h" />
+    <ClInclude Include="DatabaseInterface.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Messagecodes.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="PostgresDB.h" />
+    <ClInclude Include="PostgresQuery.h" />
+    <ClInclude Include="QueryInterface.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BeanStock.cpp" />
     <ClCompile Include="BeanStockDlg.cpp" />
+    <ClCompile Include="DatabaseInterface.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="PostgresDB.cpp" />
+    <ClCompile Include="PostgresQuery.cpp" />
+    <ClCompile Include="QueryInterface.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="BeanStock.rc" />

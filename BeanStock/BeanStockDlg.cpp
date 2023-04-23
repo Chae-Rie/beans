@@ -6,6 +6,7 @@
 #include "framework.h"
 #include "BeanStock.h"
 #include "BeanStockDlg.h"
+#include "PostgresDB.h"
 #include "afxdialogex.h"
 
 #ifdef _DEBUG

@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{586d2d60-9d24-4d92-ae2e-e3218ead017f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Messages">
+      <UniqueIdentifier>{38850981-3250-4ceb-98c5-2aa5962c95a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Docs">
+      <UniqueIdentifier>{f2a46070-5f4f-4b51-85d6-0325c6ffff0f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BeanStock.h">
@@ -33,6 +42,24 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DatabaseInterface.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Messagecodes.h">
+      <Filter>Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="0_BeanStock_doc.h">
+      <Filter>Docs</Filter>
+    </ClInclude>
+    <ClInclude Include="PostgresDB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryInterface.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="PostgresQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BeanStock.cpp">
@@ -42,6 +69,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseInterface.cpp">
+      <Filter>Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="PostgresDB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryInterface.cpp">
+      <Filter>Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="PostgresQuery.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
