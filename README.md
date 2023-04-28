@@ -5,3 +5,4 @@ Da ich gerne mehr mit und an C++ lernen möchte und ggf. nicht die Möglichkeit 
 Geplant ist eine Migration auf mindestens C++ Standard CXX17 inkl. der std-lib.
 
 Die Datenbank wird vom Windowsclient auch ausgelagert in eine WSL2 OpenSUSE Leap Maschine.
+ANPASSEN VERALTET
