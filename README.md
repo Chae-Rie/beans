@@ -9,7 +9,7 @@ Erste Implementation:
 FeatureIdeen:
 - Hinzufügen und löschen von Artikeln in Datenbank
 - Lesen von Datenbankeinträgen in eigenem Dialog
-- 
+- Wrapper als Android App -> Komfortables Eintragen/Austragen von dem Einkauf
   - Nutzen von einem QR-Code oder NFC-Tag am Kühlschrank der eine definierte Funktion ausführen soll (add-delete)
     -> Speichern von Einträgen in einer Einkaufsliste
   - Hinzufügen von Rezepten
