@@ -9,9 +9,9 @@ CREATE TABLE "Fridge" (
 CREATE TABLE "Products" (
   "id" integer PRIMARY KEY,
   "own_article_number" varchar(50),
-  "barcode_id" integer,
+  "barcode_id" integer UNIQUE,
   "name" varchar(50),
-  "category_id" integer,
+  "category_id" integer UNIQUE,
   "unit" varchar(50),
   "image" bytea,
   "expiry_date" date,
@@ -34,8 +34,8 @@ CREATE TABLE "Shoppinglist" (
 
 CREATE TABLE "Shoppinglist_products" (
   "id" integer PRIMARY KEY,
-  "shoppinglist_id" integer,
-  "product_id" integer,
+  "shoppinglist_id" integer UNIQUE,
+  "product_id" integer UNIQUE,
   "quantity" decimal(10),
   "created_at" timestamp,
   "updated_at" timestamp
@@ -43,18 +43,18 @@ CREATE TABLE "Shoppinglist_products" (
 
 CREATE TABLE "Fridge_products" (
   "id" integer PRIMARY KEY,
-  "product_id" integer,
-  "fridge_id" integer,
-  "unit_id" integer,
+  "product_id" integer UNIQUE,
+  "fridge_id" integer UNIQUE,
+  "unit_id" integer UNIQUE,
   "quantity" integer,
-  "barcode_id" integer,
+  "barcode_id" integer UNIQUE,
   "added_at" timestamp,
   "expiry_date" date
 );
 
 CREATE TABLE "Unit" (
   "id" integer PRIMARY KEY,
-  "product_id" integer,
+  "product_id" integer UNIQUE,
   "unit" varchar(50)
 );
 
@@ -66,11 +66,11 @@ CREATE TABLE "Category" (
 CREATE TABLE "Ingredient" (
   "id" integer PRIMARY KEY,
   "name" varchar(50),
-  "category_id" integer
+  "category_id" integer UNIQUE
 );
 
 CREATE TABLE "Recipe" (
-  "id" integer PRIMARY KEY,
+  "id" integer PRIMARY KEY ,
   "name" text,
   "descriptions" text,
   "instructions" text
@@ -78,9 +78,9 @@ CREATE TABLE "Recipe" (
 
 CREATE TABLE "Recipe_ingredient" (
   "id" integer PRIMARY KEY,
-  "recipe_id" integer,
-  "product_id" integer,
-  "unit_id" integer,
+  "recipe_id" integer UNIQUE,
+  "product_id" integer UNIQUE,
+  "unit_id" integer UNIQUE,
   "amount" numeric
 );
 
@@ -95,38 +95,38 @@ CREATE TABLE "User" (
 
 CREATE TABLE "User_recipe" (
   "id" integer PRIMARY KEY,
-  "user_id" integer,
-  "recipe_id" integer,
+  "user_id" integer UNIQUE,
+  "recipe_id" integer UNIQUE,
   "added_on" timestamp
 );
 
 CREATE TABLE "User_ingredient" (
   "id" integer PRIMARY KEY,
-  "user_id" integer,
-  "ingredient_id" integer,
+  "user_id" integer UNIQUE,
+  "ingredient_id" integer UNIQUE,
   "quantity" numeric,
-  "unit_id" integer,
+  "unit_id" integer UNIQUE,
   "purchase_date" date,
   "expiry_date" date
 );
 
 CREATE TABLE "User_shopping_list" (
   "id" integer PRIMARY KEY,
-  "user_id" integer,
+  "user_id" integer UNIQUE,
   "created_at" timestamp
 );
 
 CREATE TABLE "User_shopping_list_item" (
   "id" integer PRIMARY KEY,
-  "shoppinglist_id" integer,
-  "ingredient_id" integer,
+  "shoppinglist_id" integer UNIQUE,
+  "ingredient_id" integer UNIQUE,
   "quantity" numeric,
-  "unit_id" integer
+  "unit_id" integer UNIQUE
 );
 
 CREATE TABLE "Notification" (
   "id" integer PRIMARY KEY,
-  "user_id" integer,
+  "user_id" integer UNIQUE,
   "message" text,
   "created_at" timestamp
 );
@@ -159,9 +159,9 @@ COMMENT ON COLUMN "User"."password" IS 'verschlüsselt';
 
 COMMENT ON COLUMN "Notification"."message" IS 'Nachricht um den Nutzer hinzuweisen';
 
-ALTER TABLE "Category" ADD FOREIGN KEY ("id") REFERENCES "Products" ("category_id");
-
 ALTER TABLE "Products" ADD FOREIGN KEY ("barcode_id") REFERENCES "Barcode" ("id");
+
+ALTER TABLE "Category" ADD FOREIGN KEY ("id") REFERENCES "Products" ("category_id");
 
 ALTER TABLE "Barcode" ADD FOREIGN KEY ("product_id") REFERENCES "Products" ("id");
 
@@ -171,11 +171,11 @@ ALTER TABLE "Products" ADD FOREIGN KEY ("id") REFERENCES "Shoppinglist_products"
 
 ALTER TABLE "Products" ADD FOREIGN KEY ("id") REFERENCES "Fridge_products" ("product_id");
 
-ALTER TABLE "Barcode" ADD FOREIGN KEY ("id") REFERENCES "Fridge_products" ("barcode_id");
-
 ALTER TABLE "Fridge" ADD FOREIGN KEY ("id") REFERENCES "Fridge_products" ("fridge_id");
 
 ALTER TABLE "Unit" ADD FOREIGN KEY ("id") REFERENCES "Fridge_products" ("unit_id");
+
+ALTER TABLE "Barcode" ADD FOREIGN KEY ("id") REFERENCES "Fridge_products" ("barcode_id");
 
 ALTER TABLE "Products" ADD FOREIGN KEY ("id") REFERENCES "Unit" ("product_id");
 
