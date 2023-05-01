@@ -6,7 +6,7 @@
 
 class DatabaseInterface {
 public:
-	virtual std::shared_ptr<PGconn> ConnectDatabase() = 0;
+	virtual std::shared_ptr<PGconn> ConnectDatabase(const char* connectionstring) = 0;
 	virtual BOOL DisconnectDatabase() = 0;
 
 private:

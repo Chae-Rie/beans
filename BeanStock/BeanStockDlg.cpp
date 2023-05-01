@@ -33,6 +33,7 @@ BEGIN_MESSAGE_MAP(CBeanStockDlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_NOTIFY(DTN_DATETIMECHANGE, IDC_DATETIMEPICKER_PURCHASE, &CBeanStockDlg::OnDTNChangeDtPickerPurchase)
+	ON_BN_CLICKED(IDC_BUTTON_OPEN_DB_DLG, &CBeanStockDlg::OnBnClickedButtonOpenDbDlg)
 END_MESSAGE_MAP()
 
 
@@ -47,9 +48,8 @@ BOOL CBeanStockDlg::OnInitDialog()
 	SetIcon(m_hIcon, TRUE);			// Set big icon
 	SetIcon(m_hIcon, FALSE);		// Set small icon
 
-	
-	PostgresDB dbMainConnection;
-	dbMainConnection.ConnectDatabase();
+	InitiateDatabase();
+
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
 
@@ -98,8 +98,23 @@ CString CBeanStockDlg::GetEditInput(UINT uiRessourceId)
 
 
 
+void CBeanStockDlg::InitiateDatabase() {
+	
+	const char* temp_conn_string = "dbname=beanstock_db user=yuu_db password=beans2! host=192.168.0.93 port=5432";
+	PostgresDB dbMainConnection;
+	dbMainConnection.ConnectDatabase(temp_conn_string);
+
+
+
+}
+
 void CBeanStockDlg::OnDTNChangeDtPickerPurchase(NMHDR* pNMHDR, LRESULT* pResult) {
 	LPNMDATETIMECHANGE pDTChange = reinterpret_cast<LPNMDATETIMECHANGE>( pNMHDR );
-	// TODO: Add your control notification handler code here
+
 	*pResult = 0;
+}
+
+
+void CBeanStockDlg::OnBnClickedButtonOpenDbDlg() {
+	//TODO: Ich hier soll ein eigener Dialog erstellt werden
 }

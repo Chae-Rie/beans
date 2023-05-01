@@ -32,6 +32,10 @@ protected:
 	DECLARE_MESSAGE_MAP()
 private:
 	CString GetEditInput(UINT uiRessourceId);
+	
+private:
+	void InitiateDatabase();
 public:
 	afx_msg void OnDTNChangeDtPickerPurchase(NMHDR* pNMHDR, LRESULT* pResult);
+	afx_msg void OnBnClickedButtonOpenDbDlg();
 };
