@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.25)
 
-project(BeanStock)
+set(This BeanStock)
+
+project(${This})
 
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_CXX_STANDARD 17)
@@ -14,6 +16,16 @@ find_package(MFC REQUIRED)
 
 # Find the resource compiler
 find_program(RC_COMPILER NAMES rc.exe)
+
+
+enable_testing() # Wir wollen testen
+
+# Add the executable
+#add_executable(BeanStock ${SOURCES}) 
+# Wir wollen eig nur die .exe im Test erstellen und den MainCode als STATIC lib adden
+
+add_library(${This} STATIC ${SOURCES})
+add_subdirectory(thirdparty/googletest)
 
 
 # für die verschiedenen directories
@@ -40,14 +52,8 @@ set (SOURCES
 	BeanStock.cpp  
 	DatabaseInterface.cpp  
 	QueryInterface.cpp
+)
 
-
-# Define the source files and resources
-
-
-
-# Add the executable
-add_executable(BeanStock ${SOURCES})
 
 # Woher kommen die Dateien denn?
 
@@ -55,12 +61,20 @@ target_include_directories ( BeanStock PUBLIC include)
 
 target_include_directories ( BeanStock PUBLIC src)
 
-target_include_directories ( BeanStock PUBLIC tests)
+target_include_directories ( BeanStock PUBLIC mytests)
 
-target_include_directories ( BeanStock PUBLIC thirdparty)
+target_include_directories ( BeanStock PUBLIC thirdparty/libpq)
+
+target_include_directories ( BeanStock PUBLIC thirdparty/googletest)
 
 # Link MFC libraries
 target_link_libraries(BeanStock PRIVATE ${MFC_LIBRARIES})
 
 # Set the resource compiler for the project
 set(CMAKE_RC_COMPILER ${RC_COMPILER})
+
+
+
+
+
+# target_include_directories
