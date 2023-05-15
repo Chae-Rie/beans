@@ -17,10 +17,29 @@ find_program(RC_COMPILER NAMES rc.exe)
 
 
 # für die verschiedenen directories
-set(src)
-add_subdirectory("docs")
-add_subdirectory("include")
-add_subdirectory("src")
+
+set (SOURCES
+	beans/BeanStock.h
+	beans/BeanStock.h
+	beans/Messagecodes.h
+	beans/QueryInterface.h
+	beans/framework.h
+	beans/BeanStockDlg.h
+	beans/PostgresDB.h           
+	beans/pch.h 
+	beans/DatabaseInterface.h  
+	beans/PostgresQuery.h  
+	beans/Resource.h        
+	beans/targetver.h
+
+    BeanStock.rc           
+	PostgresDB.cpp      
+	BeanStockDlg.cpp       
+	PostgresQuery.cpp   
+	pch.cpp
+	BeanStock.cpp  
+	DatabaseInterface.cpp  
+	QueryInterface.cpp
 
 
 # Define the source files and resources
@@ -28,7 +47,17 @@ add_subdirectory("src")
 
 
 # Add the executable
-add_executable(BeanStock WIN32 ${src})
+add_executable(BeanStock ${SOURCES})
+
+# Woher kommen die Dateien denn?
+
+target_include_directories ( BeanStock PUBLIC include)
+
+target_include_directories ( BeanStock PUBLIC src)
+
+target_include_directories ( BeanStock PUBLIC tests)
+
+target_include_directories ( BeanStock PUBLIC thirdparty)
 
 # Link MFC libraries
 target_link_libraries(BeanStock PRIVATE ${MFC_LIBRARIES})
