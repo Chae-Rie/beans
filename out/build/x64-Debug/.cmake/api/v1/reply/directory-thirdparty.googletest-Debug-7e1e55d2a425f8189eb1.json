@@ -8,7 +8,7 @@
 	"installers" : [],
 	"paths" : 
 	{
-		"build" : "include/beans",
-		"source" : "include/beans"
+		"build" : "thirdparty/googletest",
+		"source" : "thirdparty/googletest"
 	}
 }

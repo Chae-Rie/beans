@@ -41,7 +41,7 @@ include CMakeFiles\rules.ninja
 
 cmake_ninja_workdir = E$:\dev\git$ repos\beans\out\build\x64-Debug\
 # =============================================================================
-# Object build statements for EXECUTABLE target BeanStock
+# Object build statements for STATIC_LIBRARY target BeanStock
 
 
 #############################################
@@ -49,90 +49,108 @@ cmake_ninja_workdir = E$:\dev\git$ repos\beans\out\build\x64-Debug\
 
 build cmake_object_order_depends_target_BeanStock: phony || CMakeFiles\BeanStock.dir
 
-build CMakeFiles\BeanStock.dir\src\BeanStock.cpp.obj: CXX_COMPILER__BeanStock_Debug E$:\dev\git$ repos\beans\src\BeanStock.cpp || cmake_object_order_depends_target_BeanStock
-  DEFINES = -D_AFXDLL
-  FLAGS = -Wall /MDd /Zi /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
-  OBJECT_DIR = CMakeFiles\BeanStock.dir
-  OBJECT_FILE_DIR = CMakeFiles\BeanStock.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\
-  TARGET_PDB = BeanStock.pdb
-
-build CMakeFiles\BeanStock.dir\src\BeanStockDlg.cpp.obj: CXX_COMPILER__BeanStock_Debug E$:\dev\git$ repos\beans\src\BeanStockDlg.cpp || cmake_object_order_depends_target_BeanStock
-  DEFINES = -D_AFXDLL
-  FLAGS = -Wall /MDd /Zi /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
-  OBJECT_DIR = CMakeFiles\BeanStock.dir
-  OBJECT_FILE_DIR = CMakeFiles\BeanStock.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\
-  TARGET_PDB = BeanStock.pdb
-
-build CMakeFiles\BeanStock.dir\src\PostgresQuery.cpp.obj: CXX_COMPILER__BeanStock_Debug E$:\dev\git$ repos\beans\src\PostgresQuery.cpp || cmake_object_order_depends_target_BeanStock
-  DEFINES = -D_AFXDLL
-  FLAGS = -Wall /MDd /Zi /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
-  OBJECT_DIR = CMakeFiles\BeanStock.dir
-  OBJECT_FILE_DIR = CMakeFiles\BeanStock.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\
-  TARGET_PDB = BeanStock.pdb
-
-build CMakeFiles\BeanStock.dir\src\DatabaseInterface.cpp.obj: CXX_COMPILER__BeanStock_Debug E$:\dev\git$ repos\beans\src\DatabaseInterface.cpp || cmake_object_order_depends_target_BeanStock
-  DEFINES = -D_AFXDLL
-  FLAGS = -Wall /MDd /Zi /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
-  OBJECT_DIR = CMakeFiles\BeanStock.dir
-  OBJECT_FILE_DIR = CMakeFiles\BeanStock.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\
-  TARGET_PDB = BeanStock.pdb
-
-build CMakeFiles\BeanStock.dir\src\QueryInterface.cpp.obj: CXX_COMPILER__BeanStock_Debug E$:\dev\git$ repos\beans\src\QueryInterface.cpp || cmake_object_order_depends_target_BeanStock
-  DEFINES = -D_AFXDLL
-  FLAGS = -Wall /MDd /Zi /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
-  OBJECT_DIR = CMakeFiles\BeanStock.dir
-  OBJECT_FILE_DIR = CMakeFiles\BeanStock.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\
-  TARGET_PDB = BeanStock.pdb
-
-build CMakeFiles\BeanStock.dir\src\PostgresDB.cpp.obj: CXX_COMPILER__BeanStock_Debug E$:\dev\git$ repos\beans\src\PostgresDB.cpp || cmake_object_order_depends_target_BeanStock
-  DEFINES = -D_AFXDLL
-  FLAGS = -Wall /MDd /Zi /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
-  OBJECT_DIR = CMakeFiles\BeanStock.dir
-  OBJECT_FILE_DIR = CMakeFiles\BeanStock.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\
-  TARGET_PDB = BeanStock.pdb
-
-build CMakeFiles\BeanStock.dir\src\pch.cpp.obj: CXX_COMPILER__BeanStock_Debug E$:\dev\git$ repos\beans\src\pch.cpp || cmake_object_order_depends_target_BeanStock
-  DEFINES = -D_AFXDLL
-  FLAGS = -Wall /MDd /Zi /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
-  OBJECT_DIR = CMakeFiles\BeanStock.dir
-  OBJECT_FILE_DIR = CMakeFiles\BeanStock.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\
-  TARGET_PDB = BeanStock.pdb
-
 build CMakeFiles\BeanStock.dir\src\BeanStock.rc.res: RC_COMPILER__BeanStock_Debug E$:\dev\git$ repos\beans\src\BeanStock.rc || cmake_object_order_depends_target_BeanStock
   DEFINES = -D_AFXDLL
   DEP_FILE = CMakeFiles\BeanStock.dir\src\BeanStock.rc.res.d
   FLAGS = -DWIN32 -D_DEBUG
+  INCLUDES = -I "E:\dev\git repos\beans\include" -I "E:\dev\git repos\beans\src" -I "E:\dev\git repos\beans\mytests" -I "E:\dev\git repos\beans\thirdparty\libpq" -I "E:\dev\git repos\beans\thirdparty\googletest"
   OBJECT_DIR = CMakeFiles\BeanStock.dir
   OBJECT_FILE_DIR = CMakeFiles\BeanStock.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\
+  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\BeanStock.pdb
+  TARGET_PDB = BeanStock.pdb
+
+build CMakeFiles\BeanStock.dir\src\PostgresDB.cpp.obj: CXX_COMPILER__BeanStock_Debug E$:\dev\git$ repos\beans\src\PostgresDB.cpp || cmake_object_order_depends_target_BeanStock
+  DEFINES = -D_AFXDLL
+  FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
+  INCLUDES = -I"E:\dev\git repos\beans\include" -I"E:\dev\git repos\beans\src" -I"E:\dev\git repos\beans\mytests" -I"E:\dev\git repos\beans\thirdparty\libpq" -I"E:\dev\git repos\beans\thirdparty\googletest"
+  OBJECT_DIR = CMakeFiles\BeanStock.dir
+  OBJECT_FILE_DIR = CMakeFiles\BeanStock.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\BeanStock.pdb
+  TARGET_PDB = BeanStock.pdb
+
+build CMakeFiles\BeanStock.dir\src\BeanStockDlg.cpp.obj: CXX_COMPILER__BeanStock_Debug E$:\dev\git$ repos\beans\src\BeanStockDlg.cpp || cmake_object_order_depends_target_BeanStock
+  DEFINES = -D_AFXDLL
+  FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
+  INCLUDES = -I"E:\dev\git repos\beans\include" -I"E:\dev\git repos\beans\src" -I"E:\dev\git repos\beans\mytests" -I"E:\dev\git repos\beans\thirdparty\libpq" -I"E:\dev\git repos\beans\thirdparty\googletest"
+  OBJECT_DIR = CMakeFiles\BeanStock.dir
+  OBJECT_FILE_DIR = CMakeFiles\BeanStock.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\BeanStock.pdb
+  TARGET_PDB = BeanStock.pdb
+
+build CMakeFiles\BeanStock.dir\src\PostgresQuery.cpp.obj: CXX_COMPILER__BeanStock_Debug E$:\dev\git$ repos\beans\src\PostgresQuery.cpp || cmake_object_order_depends_target_BeanStock
+  DEFINES = -D_AFXDLL
+  FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
+  INCLUDES = -I"E:\dev\git repos\beans\include" -I"E:\dev\git repos\beans\src" -I"E:\dev\git repos\beans\mytests" -I"E:\dev\git repos\beans\thirdparty\libpq" -I"E:\dev\git repos\beans\thirdparty\googletest"
+  OBJECT_DIR = CMakeFiles\BeanStock.dir
+  OBJECT_FILE_DIR = CMakeFiles\BeanStock.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\BeanStock.pdb
+  TARGET_PDB = BeanStock.pdb
+
+build CMakeFiles\BeanStock.dir\src\pch.cpp.obj: CXX_COMPILER__BeanStock_Debug E$:\dev\git$ repos\beans\src\pch.cpp || cmake_object_order_depends_target_BeanStock
+  DEFINES = -D_AFXDLL
+  FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
+  INCLUDES = -I"E:\dev\git repos\beans\include" -I"E:\dev\git repos\beans\src" -I"E:\dev\git repos\beans\mytests" -I"E:\dev\git repos\beans\thirdparty\libpq" -I"E:\dev\git repos\beans\thirdparty\googletest"
+  OBJECT_DIR = CMakeFiles\BeanStock.dir
+  OBJECT_FILE_DIR = CMakeFiles\BeanStock.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\BeanStock.pdb
+  TARGET_PDB = BeanStock.pdb
+
+build CMakeFiles\BeanStock.dir\src\BeanStock.cpp.obj: CXX_COMPILER__BeanStock_Debug E$:\dev\git$ repos\beans\src\BeanStock.cpp || cmake_object_order_depends_target_BeanStock
+  DEFINES = -D_AFXDLL
+  FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
+  INCLUDES = -I"E:\dev\git repos\beans\include" -I"E:\dev\git repos\beans\src" -I"E:\dev\git repos\beans\mytests" -I"E:\dev\git repos\beans\thirdparty\libpq" -I"E:\dev\git repos\beans\thirdparty\googletest"
+  OBJECT_DIR = CMakeFiles\BeanStock.dir
+  OBJECT_FILE_DIR = CMakeFiles\BeanStock.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\BeanStock.pdb
+  TARGET_PDB = BeanStock.pdb
+
+build CMakeFiles\BeanStock.dir\src\DatabaseInterface.cpp.obj: CXX_COMPILER__BeanStock_Debug E$:\dev\git$ repos\beans\src\DatabaseInterface.cpp || cmake_object_order_depends_target_BeanStock
+  DEFINES = -D_AFXDLL
+  FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
+  INCLUDES = -I"E:\dev\git repos\beans\include" -I"E:\dev\git repos\beans\src" -I"E:\dev\git repos\beans\mytests" -I"E:\dev\git repos\beans\thirdparty\libpq" -I"E:\dev\git repos\beans\thirdparty\googletest"
+  OBJECT_DIR = CMakeFiles\BeanStock.dir
+  OBJECT_FILE_DIR = CMakeFiles\BeanStock.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\BeanStock.pdb
+  TARGET_PDB = BeanStock.pdb
+
+build CMakeFiles\BeanStock.dir\src\QueryInterface.cpp.obj: CXX_COMPILER__BeanStock_Debug E$:\dev\git$ repos\beans\src\QueryInterface.cpp || cmake_object_order_depends_target_BeanStock
+  DEFINES = -D_AFXDLL
+  FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
+  INCLUDES = -I"E:\dev\git repos\beans\include" -I"E:\dev\git repos\beans\src" -I"E:\dev\git repos\beans\mytests" -I"E:\dev\git repos\beans\thirdparty\libpq" -I"E:\dev\git repos\beans\thirdparty\googletest"
+  OBJECT_DIR = CMakeFiles\BeanStock.dir
+  OBJECT_FILE_DIR = CMakeFiles\BeanStock.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\BeanStock.pdb
   TARGET_PDB = BeanStock.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target BeanStock
+# Link build statements for STATIC_LIBRARY target BeanStock
 
 
 #############################################
-# Link the executable BeanStock.exe
+# Link the static library BeanStock.lib
 
-build BeanStock.exe: CXX_EXECUTABLE_LINKER__BeanStock_Debug CMakeFiles\BeanStock.dir\src\BeanStock.cpp.obj CMakeFiles\BeanStock.dir\src\BeanStockDlg.cpp.obj CMakeFiles\BeanStock.dir\src\PostgresQuery.cpp.obj CMakeFiles\BeanStock.dir\src\DatabaseInterface.cpp.obj CMakeFiles\BeanStock.dir\src\QueryInterface.cpp.obj CMakeFiles\BeanStock.dir\src\PostgresDB.cpp.obj CMakeFiles\BeanStock.dir\src\pch.cpp.obj CMakeFiles\BeanStock.dir\src\BeanStock.rc.res
-  FLAGS = -Wall /MDd /Zi /Ob0 /Od /RTC1 -MDd -Zi
-  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:windows
-  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+build BeanStock.lib: CXX_STATIC_LIBRARY_LINKER__BeanStock_Debug CMakeFiles\BeanStock.dir\src\BeanStock.rc.res CMakeFiles\BeanStock.dir\src\PostgresDB.cpp.obj CMakeFiles\BeanStock.dir\src\BeanStockDlg.cpp.obj CMakeFiles\BeanStock.dir\src\PostgresQuery.cpp.obj CMakeFiles\BeanStock.dir\src\pch.cpp.obj CMakeFiles\BeanStock.dir\src\BeanStock.cpp.obj CMakeFiles\BeanStock.dir\src\DatabaseInterface.cpp.obj CMakeFiles\BeanStock.dir\src\QueryInterface.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64
   OBJECT_DIR = CMakeFiles\BeanStock.dir
-  POST_BUILD = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug" && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file E:/dev/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "E:/dev/git repos/beans/out/build/x64-Debug/BeanStock.exe" -installedDir E:/dev/vcpkg/installed/x64-windows/debug/bin -OutVariable out"
+  POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\
-  TARGET_FILE = BeanStock.exe
-  TARGET_IMPLIB = BeanStock.lib
+  TARGET_COMPILE_PDB = CMakeFiles\BeanStock.dir\BeanStock.pdb
+  TARGET_FILE = BeanStock.lib
   TARGET_PDB = BeanStock.pdb
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles\test.util
 
 
 #############################################
@@ -157,89 +175,35 @@ build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# E:/dev/git repos/beans/CMakeLists.txt
-# =============================================================================
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
 
 
 #############################################
-# Utility command for edit_cache
+# Utility command for install
 
-build docs\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\docs" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build docs\edit_cache: phony docs\CMakeFiles\edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build docs\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\docs" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"E:\dev\git repos\beans" -B"E:\dev\git repos\beans\out\build\x64-Debug""
-  DESC = Running CMake to regenerate build system...
+build CMakeFiles\install.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
   pool = console
   restat = 1
 
-build docs\rebuild_cache: phony docs\CMakeFiles\rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# E:/dev/git repos/beans/CMakeLists.txt
-# =============================================================================
+build install: phony CMakeFiles\install.util
 
 
 #############################################
-# Utility command for edit_cache
+# Utility command for install/local
 
-build include\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\include" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build include\edit_cache: phony include\CMakeFiles\edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build include\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\include" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"E:\dev\git repos\beans" -B"E:\dev\git repos\beans\out\build\x64-Debug""
-  DESC = Running CMake to regenerate build system...
+build CMakeFiles\install\local.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build include\rebuild_cache: phony include\CMakeFiles\rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# E:/dev/git repos/beans/include/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build include\beans\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\include\beans" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build include\beans\edit_cache: phony include\beans\CMakeFiles\edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build include\beans\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\include\beans" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"E:\dev\git repos\beans" -B"E:\dev\git repos\beans\out\build\x64-Debug""
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build include\beans\rebuild_cache: phony include\beans\CMakeFiles\rebuild_cache.util
+build install\local: phony CMakeFiles\install\local.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -248,31 +212,400 @@ build include\beans\rebuild_cache: phony include\beans\CMakeFiles\rebuild_cache.
 
 
 #############################################
+# Utility command for test
+
+build thirdparty\googletest\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\thirdparty\googletest" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build thirdparty\googletest\test: phony thirdparty\googletest\CMakeFiles\test.util
+
+
+#############################################
 # Utility command for edit_cache
 
-build src\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build thirdparty\googletest\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\thirdparty\googletest" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build src\edit_cache: phony src\CMakeFiles\edit_cache.util
+build thirdparty\googletest\edit_cache: phony thirdparty\googletest\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build src\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\src" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"E:\dev\git repos\beans" -B"E:\dev\git repos\beans\out\build\x64-Debug""
+build thirdparty\googletest\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\thirdparty\googletest" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"E:\dev\git repos\beans" -B"E:\dev\git repos\beans\out\build\x64-Debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build src\rebuild_cache: phony src\CMakeFiles\rebuild_cache.util
+build thirdparty\googletest\rebuild_cache: phony thirdparty\googletest\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build thirdparty\googletest\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build thirdparty\googletest\CMakeFiles\install.util: CUSTOM_COMMAND thirdparty\googletest\all
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\thirdparty\googletest" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build thirdparty\googletest\install: phony thirdparty\googletest\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build thirdparty\googletest\CMakeFiles\install\local.util: CUSTOM_COMMAND thirdparty\googletest\all
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\thirdparty\googletest" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build thirdparty\googletest\install\local: phony thirdparty\googletest\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/dev/git repos/beans/thirdparty/googletest/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Order-only phony target for gmock
+
+build cmake_object_order_depends_target_gmock: phony || thirdparty\googletest\googlemock\CMakeFiles\gmock.dir
+
+build thirdparty\googletest\googlemock\CMakeFiles\gmock.dir\__\googletest\src\gtest-all.cc.obj: CXX_COMPILER__gmock_Debug E$:\dev\git$ repos\beans\thirdparty\googletest\googletest\src\gtest-all.cc || cmake_object_order_depends_target_gmock
+  DEFINES = -D_AFXDLL
+  FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  -std:c++17
+  INCLUDES = -I"E:\dev\git repos\beans\thirdparty\googletest\googlemock\include" -I"E:\dev\git repos\beans\thirdparty\googletest\googlemock" -I"E:\dev\git repos\beans\thirdparty\googletest\googletest\include" -I"E:\dev\git repos\beans\thirdparty\googletest\googletest"
+  OBJECT_DIR = thirdparty\googletest\googlemock\CMakeFiles\gmock.dir
+  OBJECT_FILE_DIR = thirdparty\googletest\googlemock\CMakeFiles\gmock.dir\__\googletest\src
+  TARGET_COMPILE_PDB = lib\gmockpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\gmockpdb_debug_postfix-NOTFOUND.pdb
+
+build thirdparty\googletest\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj: CXX_COMPILER__gmock_Debug E$:\dev\git$ repos\beans\thirdparty\googletest\googlemock\src\gmock-all.cc || cmake_object_order_depends_target_gmock
+  DEFINES = -D_AFXDLL
+  FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  -std:c++17
+  INCLUDES = -I"E:\dev\git repos\beans\thirdparty\googletest\googlemock\include" -I"E:\dev\git repos\beans\thirdparty\googletest\googlemock" -I"E:\dev\git repos\beans\thirdparty\googletest\googletest\include" -I"E:\dev\git repos\beans\thirdparty\googletest\googletest"
+  OBJECT_DIR = thirdparty\googletest\googlemock\CMakeFiles\gmock.dir
+  OBJECT_FILE_DIR = thirdparty\googletest\googlemock\CMakeFiles\gmock.dir\src
+  TARGET_COMPILE_PDB = lib\gmockpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\gmockpdb_debug_postfix-NOTFOUND.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Link the static library lib\gmock.lib
+
+build lib\gmock.lib: CXX_STATIC_LIBRARY_LINKER__gmock_Debug thirdparty\googletest\googlemock\CMakeFiles\gmock.dir\__\googletest\src\gtest-all.cc.obj thirdparty\googletest\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj
+  LANGUAGE_COMPILE_FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = thirdparty\googletest\googlemock\CMakeFiles\gmock.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = lib\gmockpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_FILE = lib\gmock.lib
+  TARGET_PDB = bin\gmockpdb_debug_postfix-NOTFOUND.pdb
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Order-only phony target for gmock_main
+
+build cmake_object_order_depends_target_gmock_main: phony || thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir
+
+build thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src\gtest-all.cc.obj: CXX_COMPILER__gmock_main_Debug E$:\dev\git$ repos\beans\thirdparty\googletest\googletest\src\gtest-all.cc || cmake_object_order_depends_target_gmock_main
+  DEFINES = -D_AFXDLL
+  FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  -std:c++17
+  INCLUDES = -I"E:\dev\git repos\beans\thirdparty\googletest\googlemock\include" -I"E:\dev\git repos\beans\thirdparty\googletest\googlemock" -I"E:\dev\git repos\beans\thirdparty\googletest\googletest\include" -I"E:\dev\git repos\beans\thirdparty\googletest\googletest"
+  OBJECT_DIR = thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir
+  OBJECT_FILE_DIR = thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src
+  TARGET_COMPILE_PDB = lib\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
+
+build thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock-all.cc.obj: CXX_COMPILER__gmock_main_Debug E$:\dev\git$ repos\beans\thirdparty\googletest\googlemock\src\gmock-all.cc || cmake_object_order_depends_target_gmock_main
+  DEFINES = -D_AFXDLL
+  FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  -std:c++17
+  INCLUDES = -I"E:\dev\git repos\beans\thirdparty\googletest\googlemock\include" -I"E:\dev\git repos\beans\thirdparty\googletest\googlemock" -I"E:\dev\git repos\beans\thirdparty\googletest\googletest\include" -I"E:\dev\git repos\beans\thirdparty\googletest\googletest"
+  OBJECT_DIR = thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir
+  OBJECT_FILE_DIR = thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir\src
+  TARGET_COMPILE_PDB = lib\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
+
+build thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj: CXX_COMPILER__gmock_main_Debug E$:\dev\git$ repos\beans\thirdparty\googletest\googlemock\src\gmock_main.cc || cmake_object_order_depends_target_gmock_main
+  DEFINES = -D_AFXDLL
+  FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  -std:c++17
+  INCLUDES = -I"E:\dev\git repos\beans\thirdparty\googletest\googlemock\include" -I"E:\dev\git repos\beans\thirdparty\googletest\googlemock" -I"E:\dev\git repos\beans\thirdparty\googletest\googletest\include" -I"E:\dev\git repos\beans\thirdparty\googletest\googletest"
+  OBJECT_DIR = thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir
+  OBJECT_FILE_DIR = thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir\src
+  TARGET_COMPILE_PDB = lib\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Link the static library lib\gmock_main.lib
+
+build lib\gmock_main.lib: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src\gtest-all.cc.obj thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock-all.cc.obj thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj
+  LANGUAGE_COMPILE_FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = thirdparty\googletest\googlemock\CMakeFiles\gmock_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = lib\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_FILE = lib\gmock_main.lib
+  TARGET_PDB = bin\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
+
+
+#############################################
+# Utility command for test
+
+build thirdparty\googletest\googlemock\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\thirdparty\googletest\googlemock" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build thirdparty\googletest\googlemock\test: phony thirdparty\googletest\googlemock\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build thirdparty\googletest\googlemock\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\thirdparty\googletest\googlemock" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build thirdparty\googletest\googlemock\edit_cache: phony thirdparty\googletest\googlemock\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build thirdparty\googletest\googlemock\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\thirdparty\googletest\googlemock" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"E:\dev\git repos\beans" -B"E:\dev\git repos\beans\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build thirdparty\googletest\googlemock\rebuild_cache: phony thirdparty\googletest\googlemock\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build thirdparty\googletest\googlemock\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build thirdparty\googletest\googlemock\CMakeFiles\install.util: CUSTOM_COMMAND thirdparty\googletest\googlemock\all
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\thirdparty\googletest\googlemock" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build thirdparty\googletest\googlemock\install: phony thirdparty\googletest\googlemock\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build thirdparty\googletest\googlemock\CMakeFiles\install\local.util: CUSTOM_COMMAND thirdparty\googletest\googlemock\all
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\thirdparty\googletest\googlemock" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build thirdparty\googletest\googlemock\install\local: phony thirdparty\googletest\googlemock\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/dev/git repos/beans/thirdparty/googletest/googlemock/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Order-only phony target for gtest
+
+build cmake_object_order_depends_target_gtest: phony || thirdparty\googletest\googletest\CMakeFiles\gtest.dir
+
+build thirdparty\googletest\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj: CXX_COMPILER__gtest_Debug E$:\dev\git$ repos\beans\thirdparty\googletest\googletest\src\gtest-all.cc || cmake_object_order_depends_target_gtest
+  DEFINES = -D_AFXDLL
+  FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  -std:c++17
+  INCLUDES = -I"E:\dev\git repos\beans\thirdparty\googletest\googletest\include" -I"E:\dev\git repos\beans\thirdparty\googletest\googletest"
+  OBJECT_DIR = thirdparty\googletest\googletest\CMakeFiles\gtest.dir
+  OBJECT_FILE_DIR = thirdparty\googletest\googletest\CMakeFiles\gtest.dir\src
+  TARGET_COMPILE_PDB = lib\gtestpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\gtestpdb_debug_postfix-NOTFOUND.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Link the static library lib\gtest.lib
+
+build lib\gtest.lib: CXX_STATIC_LIBRARY_LINKER__gtest_Debug thirdparty\googletest\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj
+  LANGUAGE_COMPILE_FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = thirdparty\googletest\googletest\CMakeFiles\gtest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = lib\gtestpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_FILE = lib\gtest.lib
+  TARGET_PDB = bin\gtestpdb_debug_postfix-NOTFOUND.pdb
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Order-only phony target for gtest_main
+
+build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
+
+build thirdparty\googletest\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj: CXX_COMPILER__gtest_main_Debug E$:\dev\git$ repos\beans\thirdparty\googletest\googletest\src\gtest_main.cc || cmake_object_order_depends_target_gtest_main
+  DEFINES = -D_AFXDLL
+  FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  -std:c++17
+  INCLUDES = -external:I"E:\dev\git repos\beans\thirdparty\googletest\googletest\include" -external:I"E:\dev\git repos\beans\thirdparty\googletest\googletest" -external:W0
+  OBJECT_DIR = thirdparty\googletest\googletest\CMakeFiles\gtest_main.dir
+  OBJECT_FILE_DIR = thirdparty\googletest\googletest\CMakeFiles\gtest_main.dir\src
+  TARGET_COMPILE_PDB = lib\gtest_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin\gtest_mainpdb_debug_postfix-NOTFOUND.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Link the static library lib\gtest_main.lib
+
+build lib\gtest_main.lib: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug thirdparty\googletest\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj || lib\gtest.lib
+  LANGUAGE_COMPILE_FLAGS = -Wall /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = thirdparty\googletest\googletest\CMakeFiles\gtest_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = lib\gtest_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_FILE = lib\gtest_main.lib
+  TARGET_PDB = bin\gtest_mainpdb_debug_postfix-NOTFOUND.pdb
+
+
+#############################################
+# Utility command for test
+
+build thirdparty\googletest\googletest\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\thirdparty\googletest\googletest" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build thirdparty\googletest\googletest\test: phony thirdparty\googletest\googletest\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build thirdparty\googletest\googletest\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\thirdparty\googletest\googletest" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build thirdparty\googletest\googletest\edit_cache: phony thirdparty\googletest\googletest\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build thirdparty\googletest\googletest\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\thirdparty\googletest\googletest" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"E:\dev\git repos\beans" -B"E:\dev\git repos\beans\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build thirdparty\googletest\googletest\rebuild_cache: phony thirdparty\googletest\googletest\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build thirdparty\googletest\googletest\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build thirdparty\googletest\googletest\CMakeFiles\install.util: CUSTOM_COMMAND thirdparty\googletest\googletest\all
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\thirdparty\googletest\googletest" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build thirdparty\googletest\googletest\install: phony thirdparty\googletest\googletest\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build thirdparty\googletest\googletest\CMakeFiles\install\local.util: CUSTOM_COMMAND thirdparty\googletest\googletest\all
+  COMMAND = cmd.exe /C "cd /D "E:\dev\git repos\beans\out\build\x64-Debug\thirdparty\googletest\googletest" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build thirdparty\googletest\googletest\install\local: phony thirdparty\googletest\googletest\CMakeFiles\install\local.util
 
 # =============================================================================
 # Target aliases.
 
-build BeanStock: phony BeanStock.exe
+build BeanStock: phony BeanStock.lib
+
+build gmock: phony lib\gmock.lib
+
+build gmock.lib: phony lib\gmock.lib
+
+build gmock_main: phony lib\gmock_main.lib
+
+build gmock_main.lib: phony lib\gmock_main.lib
+
+build gtest: phony lib\gtest.lib
+
+build gtest.lib: phony lib\gtest.lib
+
+build gtest_main: phony lib\gtest_main.lib
+
+build gtest_main.lib: phony lib\gtest_main.lib
 
 # =============================================================================
 # Folder targets.
@@ -282,35 +615,28 @@ build BeanStock: phony BeanStock.exe
 #############################################
 # Folder: E:/dev/git repos/beans/out/build/x64-Debug
 
-build all: phony BeanStock.exe docs\all include\all src\all
+build all: phony BeanStock.lib thirdparty\googletest\all
 
 # =============================================================================
 
 #############################################
-# Folder: E:/dev/git repos/beans/out/build/x64-Debug/docs
+# Folder: E:/dev/git repos/beans/out/build/x64-Debug/thirdparty/googletest
 
-build docs\all: phony
-
-# =============================================================================
-
-#############################################
-# Folder: E:/dev/git repos/beans/out/build/x64-Debug/include
-
-build include\all: phony include\beans\all
+build thirdparty\googletest\all: phony thirdparty\googletest\googlemock\all
 
 # =============================================================================
 
 #############################################
-# Folder: E:/dev/git repos/beans/out/build/x64-Debug/include/beans
+# Folder: E:/dev/git repos/beans/out/build/x64-Debug/thirdparty/googletest/googlemock
 
-build include\beans\all: phony
+build thirdparty\googletest\googlemock\all: phony lib\gmock.lib lib\gmock_main.lib thirdparty\googletest\googletest\all
 
 # =============================================================================
 
 #############################################
-# Folder: E:/dev/git repos/beans/out/build/x64-Debug/src
+# Folder: E:/dev/git repos/beans/out/build/x64-Debug/thirdparty/googletest/googletest
 
-build src\all: phony
+build thirdparty\googletest\googletest\all: phony lib\gtest.lib lib\gtest_main.lib
 
 # =============================================================================
 # Built-in targets
@@ -319,14 +645,14 @@ build src\all: phony
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindMFC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.25.1-msvc1\CMakeCCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeCXXCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeRCCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeSystem.cmake E$:\dev\git$ repos\beans\CMakeLists.txt E$:\dev\git$ repos\beans\docs\CMakeLists.txt E$:\dev\git$ repos\beans\include\CMakeLists.txt E$:\dev\git$ repos\beans\include\beans\CMakeLists.txt E$:\dev\git$ repos\beans\src\CMakeLists.txt E$:\dev\vcpkg\scripts\buildsystems\vcpkg.cmake
+build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindMFC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindPython.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindPython\Support.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.25.1-msvc1\CMakeCCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeCXXCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeRCCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeSystem.cmake E$:\dev\git$ repos\beans\CMakeLists.txt E$:\dev\git$ repos\beans\thirdparty\googletest\CMakeLists.txt E$:\dev\git$ repos\beans\thirdparty\googletest\googlemock\CMakeLists.txt E$:\dev\git$ repos\beans\thirdparty\googletest\googlemock\cmake\gmock.pc.in E$:\dev\git$ repos\beans\thirdparty\googletest\googlemock\cmake\gmock_main.pc.in E$:\dev\git$ repos\beans\thirdparty\googletest\googletest\CMakeLists.txt E$:\dev\git$ repos\beans\thirdparty\googletest\googletest\cmake\Config.cmake.in E$:\dev\git$ repos\beans\thirdparty\googletest\googletest\cmake\gtest.pc.in E$:\dev\git$ repos\beans\thirdparty\googletest\googletest\cmake\gtest_main.pc.in E$:\dev\git$ repos\beans\thirdparty\googletest\googletest\cmake\internal_utils.cmake E$:\dev\vcpkg\scripts\buildsystems\vcpkg.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindMFC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.25.1-msvc1\CMakeCCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeCXXCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeRCCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeSystem.cmake E$:\dev\git$ repos\beans\CMakeLists.txt E$:\dev\git$ repos\beans\docs\CMakeLists.txt E$:\dev\git$ repos\beans\include\CMakeLists.txt E$:\dev\git$ repos\beans\include\beans\CMakeLists.txt E$:\dev\git$ repos\beans\src\CMakeLists.txt E$:\dev\vcpkg\scripts\buildsystems\vcpkg.cmake: phony
+build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindMFC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindPython.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindPython\Support.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.25\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.25.1-msvc1\CMakeCCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeCXXCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeRCCompiler.cmake CMakeFiles\3.25.1-msvc1\CMakeSystem.cmake E$:\dev\git$ repos\beans\CMakeLists.txt E$:\dev\git$ repos\beans\thirdparty\googletest\CMakeLists.txt E$:\dev\git$ repos\beans\thirdparty\googletest\googlemock\CMakeLists.txt E$:\dev\git$ repos\beans\thirdparty\googletest\googlemock\cmake\gmock.pc.in E$:\dev\git$ repos\beans\thirdparty\googletest\googlemock\cmake\gmock_main.pc.in E$:\dev\git$ repos\beans\thirdparty\googletest\googletest\CMakeLists.txt E$:\dev\git$ repos\beans\thirdparty\googletest\googletest\cmake\Config.cmake.in E$:\dev\git$ repos\beans\thirdparty\googletest\googletest\cmake\gtest.pc.in E$:\dev\git$ repos\beans\thirdparty\googletest\googletest\cmake\gtest_main.pc.in E$:\dev\git$ repos\beans\thirdparty\googletest\googletest\cmake\internal_utils.cmake E$:\dev\vcpkg\scripts\buildsystems\vcpkg.cmake: phony
 
 
 #############################################
